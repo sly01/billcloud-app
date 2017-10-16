@@ -31,7 +31,7 @@ node {
   sh '''#!/bin/bash
   source ~/.rvm/scripts/rvm
   bundle exec rake spec_prep
-  puppet apply tests/init.pp --noop --modulepath=spec/fixtures/modules
+  bundle exec puppet apply tests/init.pp --noop --modulepath=spec/fixtures/modules
   '''
 
   stage 'deploy'
