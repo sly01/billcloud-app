@@ -37,5 +37,6 @@
 #
 class app {
   notify { "Hello World": }
+  notify { "Hello World1": }
 
 }
